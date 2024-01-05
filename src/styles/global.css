@@ -11,6 +11,13 @@
     src: url(/fonts/Neirizi.ttf);
 }
 
+@font-face {
+    font-family: 'QuranTaha';
+    font-weight: 300;
+    font-style: normal;
+    src: url(/fonts/QuranTaha.ttf);
+}
+
 
 :root {
     --color-background: #EEF0E5;
@@ -35,4 +42,23 @@ html, body, #___gatsby, #___gatsby > * {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+}
+
+
+button {
+    font-family: inherit;
+    background: inherit;
+    border: 2px solid var(--color-text-secondary);
+    color: var(--color-text-secondary);
+    border-radius: 5rem;
+    transition: 0.2s ease-out;
+}
+
+button:active {
+    background-color: var(--color-text-secondary);
+    color: #fff;
+}
+
+.ayah {
+    font-family: 'QuranTaha';
 }

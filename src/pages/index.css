@@ -31,25 +31,12 @@
     word-spacing: 3px;
 }
 
-.Index button {
-    font-family: inherit;
-    background: inherit;
-    border: 2px solid var(--color-text-secondary);
-    color: var(--color-text-secondary);
-    border-radius: 5rem;
-    transition: 0.3s;
-}
-
 .Index > button {
     width: 70%;
     padding: 1rem 2rem;
     font-size: 1.8rem;
 }
 
-.Index button:active {
-    background-color: var(--color-text-secondary);
-    color: #fff;
-}
 
 .modal {
     height: 100%;

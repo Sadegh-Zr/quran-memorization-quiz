@@ -5,6 +5,7 @@ import './index.css';
 import { Link } from "gatsby";
 import 'rodal/lib/rodal.css';
 import Rodal from "rodal";
+import { navigate } from "gatsby";
 
 const getRandomHadith = () => {
   const randomNumber = randomIntFromInterval(0, HADITH.length - 1);
@@ -31,6 +32,7 @@ const IndexPage = () => {
   }
   const handleSubmit = e => {
     e.preventDefault();
+    navigate(`/quiz?juz=${juz}`)
   }
   return (
     <main className="Index">

@@ -1,0 +1,45 @@
+.quiz {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100%;
+}
+
+.quiz h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.quiz__ayah {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.quiz__resultContainer {
+    font-size: 1.8rem;
+    flex-grow: 1;
+    overflow: scroll;
+}
+
+.quiz__resultContainer:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.quiz__resultContainer >*:first-child {
+    color: var(--color-text-secondary);
+}
+
+.quiz button {
+    padding: 0.6rem;
+    font-size: 1.8rem;
+}
+
+.quiz__message {
+    font-size: 1.4rem;
+}
+
+.quiz__message > * {
+    font-family: 'Neirizi' !important;
+}
