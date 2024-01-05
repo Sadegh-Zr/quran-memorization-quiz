@@ -10,7 +10,7 @@ const Quiz = () => {
     const [isPreviousVisible, updatePreviousVisibility] = React.useState(false);
     const [isNextVisible, updateNextVisibility] = React.useState(false);
     const [isContinueVisible, updateContinueVisibilty] = React.useState(false);
-    const searchParams = window.location.search;
+    // const searchParams = window.location.search;
     const juzNumber = 1;
     const juzAyahs = React.useRef(getAyahsInRange(JUZ_RANGES[juzNumber - 1].from, JUZ_RANGES[juzNumber - 1].to))
     const [randomAyah, updateRandomAyah] = React.useState(getRandomAyah(juzAyahs.current));

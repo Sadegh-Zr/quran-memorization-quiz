@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -f -d public"
   },
   "dependencies": {
     "gatsby": "^5.13.1",
@@ -20,5 +21,8 @@
     "react-dom": "^18.2.0",
     "react-toastify": "^9.1.3",
     "rodal": "^2.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
