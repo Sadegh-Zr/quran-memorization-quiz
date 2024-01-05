@@ -8,14 +8,14 @@
     font-family: 'Neirizi';
     font-weight: 300;
     font-style: normal;
-    src: url(/fonts/Neirizi.ttf);
+    src: url(/quran-memorization-quiz/fonts/Neirizi.ttf);
 }
 
 @font-face {
     font-family: 'QuranTaha';
     font-weight: 300;
     font-style: normal;
-    src: url(/fonts/QuranTaha.ttf);
+    src: url(/quran-memorization-quiz/fonts/QuranTaha.ttf);
 }
 
 
