@@ -1,0 +1,38 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Neirizi';
+    font-weight: 300;
+    font-style: normal;
+    src: url(/fonts/Neirizi.ttf);
+}
+
+
+:root {
+    --color-background: #EEF0E5;
+    --color-text-primary: #000;
+    --color-text-secondary: #477047;
+}
+
+html {
+    font-size: 62.5%;
+    direction: rtl;
+}
+
+body {
+    background: var(--color-background);
+    font-family: "Neirizi";
+    color: var(--color-text-primary);
+}
+
+html, body, #___gatsby, #___gatsby > * {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}

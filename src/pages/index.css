@@ -1,0 +1,86 @@
+.Index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 100%;
+    justify-content: space-between;
+    
+}
+
+.Index h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hadith {
+    color: var(--color-text-secondary);;
+}
+
+.hadith, .hadith-translation {
+    font-size: 1.5rem;
+    word-spacing: 4px;
+}
+
+.hadith__from {
+    color: var(--color-text-secondary);
+}
+
+.hadith-translation {
+    word-spacing: 3px;
+}
+
+.Index button {
+    font-family: inherit;
+    background: inherit;
+    border: 2px solid var(--color-text-secondary);
+    color: var(--color-text-secondary);
+    border-radius: 5rem;
+    transition: 0.3s;
+}
+
+.Index > button {
+    width: 70%;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+}
+
+.Index button:active {
+    background-color: var(--color-text-secondary);
+    color: #fff;
+}
+
+.modal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal h1 {
+    font-size: 2rem;
+}
+
+.form {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.form__rangeWrapper {
+    margin-bottom: 1.5rem;
+}
+
+.form select {
+    font-size: 1.۲rem;
+    padding: 0 1rem;
+    font-family: inherit;
+    text-align: center;   
+}
+
+.form > button {
+    padding: 1rem 4rem;
+}
