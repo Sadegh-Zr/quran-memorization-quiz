@@ -8,6 +8,7 @@
 .quiz h1 {
     font-size: 2.5rem;
     text-align: center;
+    color: var(--color-text-secondary);
 }
 
 .quiz__ayah {
@@ -32,8 +33,10 @@
 }
 
 .quiz button {
-    padding: 0.6rem;
+    width: 90%;
+    padding: 1rem 2rem;
     font-size: 1.8rem;
+    align-self: center;
 }
 
 .quiz__message {

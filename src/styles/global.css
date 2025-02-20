@@ -15,14 +15,36 @@
     font-family: 'QuranTaha';
     font-weight: 300;
     font-style: normal;
-    src: url(/quran-memorization-quiz/fonts/QuranTaha.ttf);
+    src: url(/fonts/QuranTaha.ttf);
+}
+
+@font-face {
+	font-family: iy;
+	font-style: normal;
+	font-weight: 300;
+	src: url(/fonts/iyl.woff2) format('woff2');		 
+}
+
+@font-face {
+	font-family: iy;
+	font-style: normal;
+	font-weight: bold;
+	src: url(/fonts/iyb.woff2) format('woff2');	 
+}
+
+@font-face {
+	font-family: iy;
+	font-style: normal;
+	font-weight: normal;
+	src: url(/fonts/iyr.woff2) format('woff2');	
 }
 
 
+
 :root {
-    --color-background: #EEF0E5;
+    --color-background: #fff;
     --color-text-primary: #000;
-    --color-text-secondary: #477047;
+    --color-text-secondary: #3498db;
 }
 
 html {
@@ -32,16 +54,12 @@ html {
 
 body {
     background: var(--color-background);
-    font-family: "Neirizi";
+    font-family: iy;
     color: var(--color-text-primary);
 }
 
 html, body, #___gatsby, #___gatsby > * {
     height: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
 }
 
 
@@ -57,6 +75,11 @@ button {
 button:active {
     background-color: var(--color-text-secondary);
     color: #fff;
+}
+
+input {
+    direction: ltr;
+    font-family: inherit;
 }
 
 .ayah {

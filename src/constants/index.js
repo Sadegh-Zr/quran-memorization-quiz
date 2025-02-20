@@ -64,6 +64,7 @@ export const HADITH = [
 export const JUZ_RANGES = [
     {
         id: 1,
+        pages: [1, 21],
         from: {
             id: 1,
             ayah: 1,

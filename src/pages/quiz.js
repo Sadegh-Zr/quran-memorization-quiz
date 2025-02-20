@@ -65,21 +65,21 @@ const Quiz = () => {
     return (
         <main className='quiz'>
             <h1>آزمون</h1>
-            <p className='quiz__ayah ayah'>{getPartialText()}...</p>
+            <p className='quiz__ayah ayah'>{`{ ${getPartialText()}... }`}</p>
             {!randomAyah.hasNoPrevious && (
-                <div className='quiz__resultContainer'>
-                    <span onClick={() => { updatePreviousVisibility(true); }}>آیه قبل: </span>
+                <div onClick={() => { updatePreviousVisibility(true); }} className='quiz__resultContainer'>
+                    <span>آیه قبل: </span>
                     {isPreviousVisible && (<span className='ayah'>{juzAyahs.current[getSelectedAyahIndexFromList() - 1].text}</span>)}
                 </div>
             )}
             {!randomAyah.hasNoNext && (
-                <div className='quiz__resultContainer'>
-                    <span onClick={() => { updateNextVisibility(true); }}>آیه بعد: </span>
+                <div onClick={() => { updateNextVisibility(true); }} className='quiz__resultContainer'>
+                    <span>آیه بعد: </span>
                     {isNextVisible && (<span className='ayah'>{juzAyahs.current[getSelectedAyahIndexFromList() + 1].text}</span>)}
                 </div>
             )}
-            <div className='quiz__resultContainer'>
-                <span onClick={() => { updateContinueVisibilty(true); }}>ادامه آیه: </span>
+            <div onClick={() => { updateContinueVisibilty(true); }} className='quiz__resultContainer'>
+                <span>ادامه آیه: </span>
                 {isContinueVisible && (<span className='ayah'>{randomAyah.text.slice(getPartialText().length)}</span>)}
             </div>
             <button onClick={shuffle}>بعدی</button>
